@@ -1,0 +1,1357 @@
+/* For : Linear Gradient 
+        background: -webkit-linear-gradient(black, aqua);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; */
+/* 
+
+    FOR : FONTS
+
+        font-family: 'Anek Tamil', sans-serif;
+
+        font-family: 'Comfortaa', cursive;
+    
+        font-family: 'Josefin Sans', sans-serif; */
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------------------- NAVBAR -------------------------- */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.navigation-bar {
+
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 7vh;
+    width: 100;
+    padding: 9px;
+    background-color: black;
+}
+
+.navigation-container {
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+.mj_logo {
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    float: left;
+    justify-content: flex-start;
+    border: 2px solid;
+    padding: 3px;
+    border-color: aqua;
+}
+
+
+
+.mj_logo:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 8px 1px aqua;
+    transition: 0.2s all ease-in-out;
+
+    transform: scale(1.05);
+
+}
+
+
+
+.navigation-container a {
+
+
+    --c: linear-gradient(aqua 0 0);
+    /* update the color here */
+
+    padding-bottom: .15em;
+    background: var(--c), var(--c);
+    background-size: .3em .1em;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    transition: .3s linear, background-size .3s .2s linear;
+
+    text-decoration: none;
+    font-family: 'Comfortaa', cursive;
+    font-size: medium;
+    color: white;
+    padding: 10px;
+
+}
+
+.navigation-container a:hover {
+    color: aqua;
+    background-size: 40% .1em;
+    background-position: 10% 100%, 90% 100%;
+}
+
+.navigation-container {
+    list-style: none;
+    margin: 0 20px;
+    transition: 0.5s;
+}
+
+.navigation-container a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.navigation-container:hover a {
+    opacity: 0.2;
+}
+
+.navigation-container a:hover {
+    opacity: 1;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.navigation-container a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    transform-origin: right;
+    transform: scaleX(0);
+    z-index: -1;
+
+    border-radius: 5px;
+}
+
+.navigation-container a:hover:before {
+    transition: transform 0.5s;
+    transform-origin: left;
+    transform: scaleX(1);
+
+    border-radius: 5px;
+}
+
+/* ------------------ LAPTOP IMAGE ----------------------------------- */
+
+#section_one {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    flex-wrap: wrap;
+    padding: 80px 5px;
+
+}
+
+.image_1 {
+    width: 100%;
+    height: 500px;
+}
+
+figure.snip1033 {
+    font-family: 'Raleway', Arial, sans-serif;
+    color: rgb(17, 16, 16);
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    background: #000000;
+}
+
+figure.snip1033 img {
+    opacity: 1;
+    width: 100%;
+    position: relative;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+
+figure.snip1033 .center {
+    border-radius: 5px;
+    display: block;
+    content: '';
+    position: absolute;
+    background-color: #000;
+    top: 50%;
+    left: 50%;
+    height: 70px;
+    width: 70px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.85);
+    opacity: 0;
+    text-align: center;
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+figure.snip1033 figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+
+figure.snip1033 figcaption>div {
+    float: left;
+    height: 100%;
+    overflow: hidden;
+    width: 50%;
+    position: relative;
+}
+
+figure.snip1033 figcaption a {
+    opacity: 0.7;
+}
+
+figure.snip1033 figcaption a:hover {
+    opacity: 1;
+}
+
+figure.snip1033 figcaption h3 {
+    background-color: rgb(0, 0, 0);
+    word-spacing: -0.1em;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 1em;
+    opacity: 0;
+    position: absolute;
+    -webkit-transition: opacity 0.45s, -webkit-transform 0.45s;
+    transition: opacity 0.45s, -webkit-transform 0.45s, -moz-transform 0.45s, -o-transform 0.45s, transform 0.45s;
+}
+
+figure.snip1033 figcaption .left h3 {
+    border-radius: 5px 0 0 5px;
+    top: 50%;
+    padding: 4px 35px 4px 10px;
+    right: 0;
+    -webkit-transform: translate(100%, 0px);
+    transform: translate(100%, 0px);
+}
+
+figure.snip1033 figcaption .right h3 {
+    border-radius: 0 5px 5px 0;
+    bottom: 50%;
+    padding: 4px 10px 4px 35px;
+    padding-left: 30px;
+    -webkit-transform: translate(-100%, 0px);
+    transform: translate(-100%, 0px);
+}
+
+figure.snip1033 .red {
+    background-color: #8c212a;
+}
+
+figure.snip1033 .yellow {
+    background-color: aqua;
+}
+
+figure.snip1033 .white {
+    background-color: #ffffff;
+    color: #070707;
+}
+
+figure.snip1033:hover img,
+figure.snip1033.hover img {
+    opacity: 0.5;
+}
+
+figure.snip1033:hover figcaption .left h3,
+figure.snip1033.hover figcaption .left h3 {
+    opacity: 1;
+    -webkit-transform: translate(0%, 0px);
+    transform: translate(0%, 0px);
+}
+
+figure.snip1033:hover figcaption .right h3,
+figure.snip1033.hover figcaption .right h3 {
+    opacity: 1;
+    -webkit-transform: translate(0%, 0px);
+    transform: translate(0%, 0px);
+}
+
+figure.snip1033:hover .center,
+figure.snip1033.hover .center {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+figure.snip1033:hover .center i,
+figure.snip1033.hover .center i {
+    -webkit-transform: translate(0%, -10px);
+    transform: translate(0%, -10px);
+}
+
+
+
+/* -------------------------------- WELCOME CONTENT ------------------------ */
+
+.welcome {
+    padding: 20px;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    margin-top: 50px;
+
+}
+
+.welcome2 {
+    padding: 5px;
+    margin-bottom: 20px;
+    color: white;
+    border-radius: 32px;
+
+    font-family: 'Comfortaa', cursive;
+    font-size: 10px;
+
+    margin-bottom: 30px;
+
+}
+
+.welcome h1 {
+    font-weight: 200;
+    font-size: xx-large;
+    padding: 10px 10px 10px 0;
+
+    font-family: 'Comfortaa', cursive;
+}
+
+
+.welcome h1 span {
+
+    margin: 0px 5px;
+    padding: 0px 10px;
+
+    font-size: 60px;
+    color: aqua;
+
+}
+
+
+
+
+.middle {
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.text {
+    padding-right: 5px;
+    font-size: 72px;
+    font-weight: 900;
+    position: relative;
+    color: rgb(53, 103, 103);
+}
+
+.text::before {
+    content: attr(data-text);
+    position: absolute;
+    color: black;
+    width: 0;
+    overflow: hidden;
+    transition: 0.6s;
+}
+
+.container::before {
+    padding: 3px 5px;
+    margin-right: -2px;
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    background: aqua;
+    border-radius: 5px;
+    right: 0;
+    top: 0;
+    transition: 0.6s;
+
+}
+
+.container:hover .text::before,
+.container:hover::before {
+    width: 100%;
+}
+
+.welcome h2 {
+    padding: 4px 20px 20px 3px;
+
+    font-family: 'Comfortaa', cursive;
+}
+
+.welcome h2 span {
+
+    font-size: 36px;
+    color: aqua;
+
+}
+
+
+.welcome h6 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: small;
+    font-weight: 200;
+    padding: 3px;
+
+}
+
+
+.welcome h6 span {
+
+    font-size: 13px;
+    color: aqua;
+    padding: 2px;
+
+    font-family: 'Comfortaa', cursive;
+
+}
+/* 
+.project_port {
+    padding: 20px;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    margin-top: 50px;
+    transition: .5s;
+
+}
+
+
+
+.project_port h1 {
+    font-weight: 200;
+    font-size: xx-large;
+    padding: 10px 10px 10px 0;
+
+    font-family: 'Comfortaa', cursive;
+}
+
+.project_port h1:hover {
+
+
+    transition: 0.2s all ease-in-out;
+
+    color: aqua;
+
+    text-shadow: 0 0 3px aqua;
+
+}
+ */
+
+
+
+.project_port{
+    padding: 30px 0px;
+    color: aqua;
+    font-family: 'Comfortaa', cursive;
+    padding-bottom: 60px;
+}
+
+.project_port:hover::before,
+.project_port:hover::after {
+    display: block;
+    content: '';
+    position: absolute;
+    border-radius: 75px;
+    z-index: -1;
+    animation: 1s clockwise infinite;
+}
+
+.project_port h1 {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 30px;
+    font-size: 28px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: all 1s;
+}
+.project_port h1:after, .project_port h1:before {
+    content: " ";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border: 0px solid #fff;
+    transition: all 1s;
+}
+.project_port h1:after {
+    top: -1px;
+    left: -1px;
+    border-top: 2px solid aqua;
+    border-left: 2px solid aqua;
+}
+.project_port h1:before {
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 2px solid aqua;
+    border-right: 2px solid aqua;
+}
+.project_port h1:hover {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+
+    color: aqua;
+
+    text-shadow: 0 0 2px aqua;
+}
+.project_port h1:hover:before, .project_port h1:hover:after {
+    width: 110%;
+    height: 110%;
+}
+
+/* --------------------- PROJECTS ----------------------- */
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 9px 0px;
+    background-color: black;
+    color: white;
+    padding-top: 40px;
+}
+
+
+.welcome2 h1:hover {
+
+
+    transition: 0.2s all ease-in-out;
+
+    color: aqua;
+    transform: scale(1.05);
+    text-shadow: 0 0 3px aqua;
+
+}
+
+.html_projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding-bottom: 30px;
+    padding-top: 10px;
+
+
+}
+
+.project_1 {
+    padding: 20px;
+    border: 0.5px solid;
+    border-radius: 15px;
+    border-color: aqua;
+
+    /* box-shadow: 0px 0px 8px 0.0px aqua; */
+    background-origin: padding-box;
+    font-family: 'Comfortaa', cursive;
+    font-size: small;
+    font-weight: 200;
+    color: aqua;
+    cursor: pointer;
+    will-change: transform;
+    margin: 0px 12px;
+}
+
+
+.project_1:hover {
+
+    box-shadow: 0px 0px 8px 2px aqua;
+    transition: 0.2s all ease-in-out;
+    transform: scale(1.009);
+}
+
+
+.images_projects {
+    border: 2px solid;
+    border-radius: 15px;
+    background-origin: padding-box;
+    border-color: black;
+    height: 300px;
+    margin: 10px au to;
+    font-family: 'Comfortaa', cursive;
+    font-size: small;
+    font-weight: 200;
+    overflow-y: scroll;
+    margin-top: 20px;
+}
+
+
+
+.project_set {
+    width: 283px;
+}
+
+.border_arround_projects{
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+/* ----------------------- ABOUT ME ------------------------ */
+
+#about {
+    text-align: center;
+    padding: 9px;
+    background-color: black;
+    color: white;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 9px 0px;
+    background-color: black;
+    color: white;
+    padding-top: 50px;
+
+
+}
+
+
+.group_about {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 9px 0;
+    background-color: black;
+    color: white;
+    flex-wrap: wrap;
+    margin-top: -50px;
+    gap: 10rem;
+}
+
+.image_about:hover {
+    cursor: pointer;
+
+    transition: all 0.3s ease-out;
+    transform: scale(1.05);
+}
+
+#name_about {
+
+    font-size: 25px;
+    color: aqua;
+    padding: 4px;
+    padding-bottom: 5px;
+
+    font-family: 'Comfortaa', cursive;
+}
+
+.about_details {
+
+    text-align: left;
+    color: white;
+    width: 600px;
+}
+
+
+.about2_details {
+
+    text-align: left;
+    color: white;
+    width: 600px;
+}
+
+
+.about3_details {
+
+    text-align: left;
+    color: white;
+    width: 600px;
+}
+
+.image_about {
+
+    width: 100%;
+    height: 500px;
+}
+
+
+.about_details h2 {
+    padding: 5px;
+    font-size: 20px;
+    font-family: 'Comfortaa', cursive;
+}
+
+
+.about_details p {
+    padding: 9px;
+    font-size: 13px;
+
+    font-family: 'Anek Tamil', sans-serif;
+
+}
+
+.about_details h3 {
+    padding: 10px;
+    font-size: 13px;
+    font-family: 'Comfortaa', cursive;
+    line-height: 19px;
+    font-weight: inherit;
+    color: aqua;
+}
+
+
+
+.about2_details h2 {
+    padding: 5px;
+    font-size: 20px;
+    font-family: 'Comfortaa', cursive;
+}
+
+
+.about2_details p {
+    padding: 9px;
+    font-size: 13px;
+
+    font-family: 'Anek Tamil', sans-serif;
+
+}
+
+.about2_details h3 {
+    padding: 10px;
+    font-size: 13px;
+    font-family: 'Comfortaa', cursive;
+    line-height: 19px;
+    font-weight: inherit;
+    color: aqua;
+}
+
+
+
+.about3_details h2 {
+    padding: 5px;
+    font-size: 20px;
+    font-family: 'Comfortaa', cursive;
+}
+
+
+.about3_details p {
+    padding: 9px;
+    font-size: 13px;
+
+    font-family: 'Anek Tamil', sans-serif;
+
+}
+
+.about3_details h3 {
+    padding: 10px;
+    font-size: 13px;
+    font-family: 'Comfortaa', cursive;
+    line-height: 19px;
+    font-weight: inherit;
+    color: aqua;
+}
+
+.btn-group {
+    margin: 15px 0px;
+}
+
+.btn-group button {
+
+    width: 31%;
+    color: black;
+    background-color: aqua;
+    border-color: aqua;
+    border: 2px solid;
+    border-radius: 9px;
+    padding: 7px;
+    margin: 3px;
+}
+
+/* ----------------------------------- CONTACT ---------------------------------- */
+
+#contact_me {
+
+    text-align: center;
+    padding: 9px;
+    background-color: black;
+    color: white;
+    
+}
+
+#contact_me .project_port{
+    width: 300px;
+    vertical-align: middle;
+}
+
+.group{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.group_contact {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 70px 0px;
+    background-color: black;
+    color: white;
+    flex-wrap: wrap;
+    gap: 10rem;
+
+}
+
+
+
+.contact_details {
+
+    text-align: left;
+    color: white;
+
+    padding: 30px;
+    padding-left: 5px;
+    padding-right: 110px;
+
+    border: 0.1px solid;
+    border-radius: 4px;
+    border-color: aqua;
+
+}
+
+
+
+.contact2_details {
+
+    text-align: left;
+    color: white;
+    width: 600px;
+}
+
+
+.contact3_details {
+
+    text-align: left;
+    color: white;
+    width: 600px;
+}
+
+.image_contact {
+    padding: 20px;
+    width: 30%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.contact_details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contact_details:hover {
+
+    box-shadow: 0px 0px 8px 2px aqua;
+    transition: 0.2s all ease-in-out;
+    transform: scale(1.009);
+    color: aqua;
+}
+
+
+.contact_details ul {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    align-items: left;
+    padding: 5px;
+    flex-direction: column;
+}
+
+.contact_details ul a {
+    text-decoration: none;
+    color: white;
+    list-style: none;
+
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    align-items: center;
+    padding: 5px;
+
+    padding: 5px;
+    font-family: 'Anek Tamil', sans-serif;
+}
+
+.contact_details ul a:hover {
+
+
+    transition: 0.2s all ease-in-out;
+    transform: scale(1.009);
+    color: aqua;
+    cursor: pointer;
+
+}
+
+
+.contact_details ul a img {
+    height: 30px;
+    width: 30px;
+    padding: 10px;
+
+}
+
+/* -------------------- CONTACT FORM --------------- */
+
+#form {
+    padding: 20px;
+    width: 30%;
+}
+
+
+
+#form {
+    padding: 15px;
+
+    text-decoration: none;
+    color: aqua;
+    list-style: none;
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 5px;
+    font-family: 'Anek Tamil', sans-serif;
+}
+
+
+#form label {
+    text-decoration: none;
+    color: aqua;
+    list-style: none;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+
+
+    padding: 10px;
+    padding-left: 0px;
+    font-family: 'Anek Tamil', sans-serif;
+}
+
+#label-name {
+    padding-right: 10px;
+}
+
+.button_form {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+
+#form button {
+
+    width: 31%;
+    color: black;
+    background-color: aqua;
+    border-color: aqua;
+    border: 2px solid;
+    border-radius: 9px;
+    padding: 7px;
+
+    margin: 5px;
+    margin-top: 20px;
+
+}
+
+
+#form button:hover {
+
+    box-shadow: 0px 0px 10px 0.000005px aqua;
+    transition: 0.2s all ease-in-out;
+    border: none;
+
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+
+#form input {
+    padding: 10px;
+
+}
+
+
+
+/* ------------------ FOOTER --------------------- */
+
+.footer_group {
+    height: 200px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+
+.footer1 {
+    color: white;
+
+    font-size: 20px;
+    padding: 2px;
+    padding-bottom: 5px;
+
+    font-family: 'Comfortaa', cursive;
+}
+
+.footer1 span {
+    color: aqua;
+    font-size: 25px;
+}
+
+.footer2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer2 img {
+    width: 100px;
+    height: 100px;
+}
+
+.footer2 a {
+    text-decoration: none;
+    color: white;
+    font-size: small;
+    font-weight: 300;
+
+    font-family: 'Anek Tamil', sans-serif;
+}
+
+.image_logos {
+    width: 30px;
+    height: 30px;
+    padding: 0px 6px;
+}
+
+.card {
+    width: 130px;
+    height: 195px;
+    position: relative;
+    display: inline-block;
+}
+
+.card .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card:hover .img-top {
+    display: inline;
+}
+
+
+/* ---------------------------- ABOUT IMAGE ---------------------------------- */
+
+.photo {
+    width: 430px;
+    height: 580px;
+    background-image: url(../Images/mehrax-L1YDT1568aw-unsplash-removebg-preview.png);
+    opacity: 1;
+    -webkit-transition: opacity 200ms linear;
+    -moz-transition: opacity 200ms linear;
+    -o-transition: opacity 200ms linear;
+    -ms-transition: opacity 200ms linear;
+    transition: opacity 200ms linear;
+}
+
+.photo:hover {
+    transition: 0.3s all ease-in-out;
+    background-image: url(../Images/image_4_-removebg-preview\(1\).png);
+    background-size: cover;
+    background-color: black;
+    opacity: 0.5;
+    -webkit-transition: opacity 200ms linear;
+    -moz-transition: opacity 200ms linear;
+    -o-transition: opacity 200ms linear;
+    -ms-transition: opacity 200ms linear;
+    transition: opacity 200ms linear;
+}
+
+
+
+textarea {
+    resize: none;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+
+    #form {
+        width: 85%;
+    }
+
+    .group_contact,
+    .group_about {
+        gap: 2rem;
+    }
+
+    .contact_details {
+        padding: 10px 150px 10px 10px;
+    }
+
+    .image_1 {
+        height: 400px;
+    }
+
+    .welcome {
+        margin-bottom: 50px;
+    }
+
+    .html_projects {
+        margin-bottom: 50px;
+
+    }
+
+
+}
+
+
+@media only screen and (max-width:800px) {
+
+    .navigation-container {
+        gap: 20px;
+    }
+
+    .navigation-container a {
+        font-size: smaller;
+    }
+
+
+}
+
+
+
+@media only screen and (max-width:500px) {
+
+    .navigation-container {
+        gap: 3px;
+    }
+
+
+    .photo {
+        width: 100%;
+    }
+
+    .welcome {
+        margin-bottom: 50px;
+        margin-top: -30px;
+    }
+
+    .contact_details {
+        padding: 10px 10px 10px 10px;
+    }
+
+    .footer_group .footer1 {
+        font-size: medium;
+    }
+
+    .footer_group {
+        font-size: medium;
+    }
+
+
+    .footer_group .footer2 a {
+        font-size: x-small;
+    }
+
+
+}
+
+
+
+/* --------------------------------------- GYM --------------------------- */
+
+/* 
+.sec-1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+
+    background-color: white;
+}
+
+.sec-1 img {
+    padding: 50px;
+    height: 400px;
+}
+
+.text {
+    font-size: medium;
+    text-align: left;
+    width: 40%;
+}
+
+.text span {
+    font-size: xx-large;
+}
+
+.card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.price_group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.section_two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5rem;
+}
+
+.heading_2{
+    font-size: xx-large;
+    width: 100%;
+}
+
+.membership{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    font-size: small;
+}
+
+.group_products{
+    display:flex;
+     justify-content:space-around;
+     align-items:center;
+     flex-wrap: wrap;
+}
+
+
+.membership h2 ul li{
+    font-size: medium;
+    text-decoration: none;
+    list-style: none;
+}
+
+.content h1{
+    font-size: x-large;
+
+}
+
+.content span{
+    color: orangered;
+}
+
+
+.content h3{
+    text-align: left;
+    font-size: medium;
+    font-weight: 900;
+}
+
+
+.content h2 ul li{
+    font-size: medium;
+    text-decoration: none;
+    list-style: none;
+}
+
+.service_content{
+    display: flex; 
+    justify-content:center; 
+    padding-top: 6rem; 
+    padding-bottom: 3rem;
+    gap: 50px;
+}
+
+.sec-1_content span{
+    color: orangered;
+}
+
+.image img{
+    height: 400px;
+}
+
+@media only screen and (max-width:800px) {
+    .sec-1_content{
+        width: 90%;
+    }
+    .service_content{
+        display: flex; 
+        justify-content:center; 
+        padding-top: 6rem; 
+        padding-bottom: 3rem;
+    }
+}
+
+
+@media only screen and (max-width:550px) {
+    .service_content{
+        
+        gap: 0px;
+    }
+    .sec-1 img {
+        padding: 50px;
+        height: 250px;
+      }
+      .image img{
+        height: 250px;
+      }
+} */
